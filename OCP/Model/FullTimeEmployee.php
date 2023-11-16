@@ -1,19 +1,19 @@
 <?php
-namespace OCP\Model;
 
-require_once './Employee.php';
-use OCP\Model;
+namespace OCP\Model;
+require_once __DIR__ . '/../../AutoLoad.php';
+
 class FullTimeEmployee extends Employee
 {
     public $bonus;
 
     public function __construct($bonus)
     {
-        $this->bonus=$bonus;
+        $this->bonus = $bonus;
     }
 
     public function calculateSalary()
     {
-        echo $this->bonus + 2000;
+        return $this->bonus + 2000;
     }
 }

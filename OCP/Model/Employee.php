@@ -1,6 +1,6 @@
 <?php
 
-namespace OCPModel;
+namespace OCP\Model;
 
 abstract class Employee
 {

@@ -1,11 +1,14 @@
 <?php
 
 namespace OCP\Model;
+require_once __DIR__ . '/../../AutoLoad.php';
 
 class Training extends Employee
 {
+
+
     public function calculateSalary()
     {
-        echo 2000;
+        return 2000;
     }
 }
